@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | To-Do App</title>
+  <link rel="stylesheet" href="../css/home.css" />
+  <script type="module" src="../js/home.js" defer></script>
+  <script type="module" src="../js/firebase-configuration.js" defer></script>
+</head>
+<body>
+  <!-- Loader Overlay -->
+  <div id="loaderOverlay">
+    <div class="spinner"></div>
+    <p>Loading your tasks...</p>
+  </div>
+
+  <!-- Main To-Do Content -->
+  <div class="todo-container" id="todoContainer" style="display:none;">
+    <h1>📝 My To-Do List</h1>
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="Enter a new task..." />
+      <button id="addTask">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+    <button id="logoutBtn" class="logout">Logout</button>
+  </div>
+</body>
+</html>
